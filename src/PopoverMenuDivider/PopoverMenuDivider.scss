@@ -1,0 +1,12 @@
+@import '../common.scss';
+
+.root {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid $D60;
+}

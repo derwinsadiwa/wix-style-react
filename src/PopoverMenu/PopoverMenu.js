@@ -7,6 +7,7 @@ import More from '../new-icons/More';
 import PopoverMenuItem from '../PopoverMenuItem';
 import classnames from 'classnames';
 import { oneOf, oneOfType, bool, element, number, string } from 'prop-types';
+import PopoverMenuDivider from '../PopoverMenuDivider';
 
 class PopoverMenu extends WixComponent {
   static displayName = 'PopoverMenu';
@@ -38,6 +39,7 @@ class PopoverMenu extends WixComponent {
     appendTo: element,
     /** Sets a zIndex to the popover  */
     zIndex: number,
+    showArrow: bool,
   };
 
   static defaultProps = {
@@ -48,12 +50,17 @@ class PopoverMenu extends WixComponent {
     maxWidth: '378px',
     appendToParent: false,
     zIndex: 0,
+    showArrow: true,
   };
 
   _menuItems = items =>
     React.Children.map(items, (item, i) => {
       if (!item) {
         return null;
+      }
+
+      if (item.type === PopoverMenuDivider) {
+        return <PopoverMenuDivider {...item.props} />;
       }
 
       return (
@@ -102,6 +109,7 @@ class PopoverMenu extends WixComponent {
         appendTo={this.props.appendTo}
         appendToParent={this.props.appendToParent}
         zIndex={this.props.zIndex}
+        showArrow={this.props.showArrow}
       >
         <Button type="button" height={buttonHeight} theme={buttonTheme}>
           <More />
