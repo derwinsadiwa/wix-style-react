@@ -7,7 +7,6 @@ import More from '../new-icons/More';
 import PopoverMenuItem from '../PopoverMenuItem';
 import classnames from 'classnames';
 import { oneOf, oneOfType, bool, element, number, string } from 'prop-types';
-import PopoverMenuDivider from '../PopoverMenuDivider';
 
 class PopoverMenu extends WixComponent {
   static displayName = 'PopoverMenu';
@@ -57,10 +56,6 @@ class PopoverMenu extends WixComponent {
     React.Children.map(items, (item, i) => {
       if (!item) {
         return null;
-      }
-
-      if (item.type === PopoverMenuDivider) {
-        return <PopoverMenuDivider {...item.props} />;
       }
 
       return (

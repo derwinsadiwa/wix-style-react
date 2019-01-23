@@ -91,7 +91,6 @@ export const pageTestkitFactory = enzymeTestkitFactoryCreator(load('../src/Page/
 export const pageHeaderTestkitFactory = enzymeTestkitFactoryCreator(load('../src/PageHeader/PageHeader.driver'));
 export const popoverTestkitFactory = enzymeTestkitFactoryCreator(load('../src/Popover/Popover.driver'));
 export const popoverMenuTestkitFactory = enzymeTestkitFactoryCreator(load('../src/PopoverMenu/PopoverMenu.driver'));
-export const popoverMenuDividerTestkitFactory = enzymeTestkitFactoryCreator(load('../src/PopoverMenuDivider/PopoverMenuDivider.driver'));
 export const proportionTestkitFactory = enzymeUniTestkitFactoryCreator(load('../src/Proportion/Proportion.driver'));
 export const radioGroupTestkitFactory = enzymeTestkitFactoryCreator(load('../src/RadioGroup/RadioGroup.driver'));
 export const rangeTestkitFactory = enzymeTestkitFactoryCreator(load('../src/Range/Range.driver'));
