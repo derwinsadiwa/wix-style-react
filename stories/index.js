@@ -39,7 +39,7 @@ import './MultiSelect/index.story'; // 3.8 Tags
 import './MultiSelectComposite'; // 3.8 + MultiSelectComposite
 import './Search/index.story'; // 3.9 Search
 import './ImageViewer/index.story'; // 3.10 ImageViewer
-import './FilePicker'; // 3.10 + FilePicker
+import './FilePicker.story'; // 3.10 + FilePicker
 
 // 4. Selection
 import './Dropdown/DropdownStory.js'; // 4.1 Dropdown
