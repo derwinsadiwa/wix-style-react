@@ -21,7 +21,7 @@ import './Page/index.story.js'; // 2.5 Page
 import './PageHeader/index.story.js'; // 2.5 + PageHeader
 import './Page/FullPageExample.js'; // 2.5 + Page Example
 import './EmptyState/EmptyState.story'; // 2.6 EmptyState
-import './StatsWidget'; // 2.7 StatsWidget
+import './StatsWidget/index.story'; // 2.7 StatsWidget
 import './AddItem/AddItem.story'; // 2.8 AddItem
 import './Grid';
 import './Card';
