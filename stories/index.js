@@ -50,7 +50,7 @@ import './MultiSelectCheckbox/index.story.js'; // 4.1 + MultiSelectCheckbox
 import './CheckBox/index.story.js'; // 4.2 Checkbox
 import './RadioGroup.story.js'; // 4.3 RadioGroup
 import './ToggleSwitch/index.story'; // 4.4 ToggleSwitch
-import './Slider'; // 4.7 Slider
+import './Slider/index.story'; // 4.7 Slider
 
 // 5. Buttons
 import './Button/index.story.js'; // 5.1 Standard
