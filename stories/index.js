@@ -161,6 +161,7 @@ import './Avatar/AvatarTestStory'; // Tests/12. Other/12.6 Avatar
 import './Box/testStory';
 import './Thumbnail/testStory';
 import './EditableSelector/testStory';
+import './Slider/testStory'; // 4.7 Slider
 
 // The generated test component
 import './GeneratedTestComponent/index.story';

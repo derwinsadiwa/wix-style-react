@@ -12,6 +12,7 @@ export const Category = {
   FOUNDATION: '1. Foundation',
   BUTTONS: '5. Buttons',
   INPUTS: '3. Inputs',
+  SELECTION: '4. Selection',
   PICKERS_AND_SELECTORS: '11. Pickers and Selectors',
   OTHER: '12. Other',
   COMPONENTS: 'Components',
