@@ -87,7 +87,7 @@ import './TableActionCell/TableActionCell.story'; // 10.1 Table -> TableActionCe
 
 // 11. Pickers and Selectors
 import './DropdownLayout'; // 11.1 DropdownLayout
-import './EditableSelector'; // 11.2 EditableSelector
+import './EditableSelector/index.story'; // 11.2 EditableSelector
 import './ModalSelectorLayout.story.js'; // 11.3 ModalSelectorLayout
 import './ColorPicker/index.story.js'; // 11.5 Color Picker
 import './Calendar/index.story'; // 11.5 Calendar

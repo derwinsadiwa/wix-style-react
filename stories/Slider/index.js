@@ -13,9 +13,12 @@ import ExampleControlledRaw from '!raw-loader!./ExampleControlled';
 import ExampleRtl from './ExampleRtl';
 import ExampleRtlRaw from '!raw-loader!./ExampleRtl';
 
+// TODO: convert to automated story page to avoid this trick
+const isE2E = global.self === global.top;
+
 storiesOf('4. Selection', module).add('4.7 Slider', () => (
   <div>
-    <AutoDocs source={SliderSource} />
+    {!isE2E && <AutoDocs source={SliderSource} />}
 
     <h1>Usage examples</h1>
 
