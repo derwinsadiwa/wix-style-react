@@ -2,13 +2,14 @@
 import React from 'react';
 
 import FilePicker from 'wix-style-react/FilePicker';
+import { storySettings } from './storySettings';
 
 export default {
-  category: '3. Inputs',
-  storyName: '3.10 + FilePicker',
+  category: storySettings.category,
+  storyName: storySettings.storyName,
 
   component: FilePicker,
-  componentPath: '../src/FilePicker',
+  componentPath: '../../src/FilePicker',
 
   componentProps: {
     mainLabel: 'Choose File',

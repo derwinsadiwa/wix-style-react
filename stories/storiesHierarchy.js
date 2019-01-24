@@ -10,6 +10,7 @@ export const getTestStoryKind = ({ category, storyName }) =>
 
 export const Category = {
   FOUNDATION: '1. Foundation',
+  LAYOUT: '2. Layout',
   BUTTONS: '5. Buttons',
   INPUTS: '3. Inputs',
   SELECTION: '4. Selection',

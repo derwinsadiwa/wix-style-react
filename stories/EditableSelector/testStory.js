@@ -13,7 +13,6 @@ const kind = getTestStoryKind(storySettings);
 storiesOf(kind, module).add(testStories.editableSelector, () => (
   <div>
     <CardWithEditableSelector />
-
     <PopoverWithEditableSelector />
   </div>
 ));
