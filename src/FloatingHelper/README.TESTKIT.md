@@ -51,4 +51,11 @@
   
   //Do tests
   testkit.clickCloseButton();
+
+  // include these polyfills when needed (..? @yarden)
+  import {requestAnimationFramePolyfill, rangePolyfill} from 'wix-style-react/dist/testkit/polyfills';
+  beforeAll(() => {
+    rangePolyfill.install();
+    requestAnimationFramePolyfill.install();
+  });
 ```
