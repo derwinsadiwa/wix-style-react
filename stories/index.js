@@ -160,6 +160,7 @@ import './Tag/TagTestStory'; // Tests/12. Other/12.5 Tag
 import './Avatar/AvatarTestStory'; // Tests/12. Other/12.6 Avatar
 import './Box/testStory';
 import './Thumbnail/testStory';
+import './EditableSelector/testStory';
 
 // The generated test component
 import './GeneratedTestComponent/index.story';
