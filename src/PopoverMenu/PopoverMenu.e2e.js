@@ -38,7 +38,6 @@ describe('PopoverMenu', () => {
       withExamples: true,
       rtl,
     });
-    logs.reset();
     logs.ignore(message => message.message.indexOf('Uncaught') === -1);
 
     driver = popoverMenuTestkitFactory({
@@ -101,7 +100,7 @@ describe('PopoverMenu', () => {
     await waitForVisibilityOf(driver.menu.element());
 
     await browser.wait(
-      waitForVisibilityOf(driver.menu.element(by.css('[data-hook="story-popover-menu-with-divider-item"]'))),
+      waitForVisibilityOf(driver.menu.element(by.css(`[data-hook="${storySettings.itemDataHookDivider}"]`))),
       1000,
       'PopoverMenu has no divider',
     );
