@@ -4,6 +4,21 @@
 
 ## FloatingHelper TestKit API
 
+### Polyfills
+
+Since the tests won't be ran in a browser environment, the `<FloatingHelper/>` component might need some
+polyfills. You can use them as follows:
+
+```javascript
+import { requestAnimationFramePolyfill, rangePolyfill } from 'wix-style-react/dist/testkit/polyfills';
+
+beforeAll(() => {
+  rangePolyfill.install();
+  requestAnimationFramePolyfill.install();
+});
+```
+
+
 ### Enzyme / ReactTestUtils
 | method | arguments | returned value | description |
 |--------|-----------|----------------|-------------|
@@ -51,11 +66,4 @@
   
   //Do tests
   testkit.clickCloseButton();
-
-  // include these polyfills when needed (..? @yarden)
-  import {requestAnimationFramePolyfill, rangePolyfill} from 'wix-style-react/dist/testkit/polyfills';
-  beforeAll(() => {
-    rangePolyfill.install();
-    requestAnimationFramePolyfill.install();
-  });
 ```
